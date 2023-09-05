@@ -1,0 +1,192 @@
+*{
+    padding: 0px; margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background: rgba(40, 40, 51, 0.95);
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+}
+
+/* home.js */
+.main{
+    border: 1px solid transparent;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 0px 0px 15px rgba(255,255,255,0.45);
+    background: rgba(255,255,255,0.09);
+    padding: 45px;
+}
+.main h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.getStarted{
+    color: white;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 20px;
+    background: rgb(0, 111, 128);
+}
+.getStarted:hover{
+    background: rgb(0, 120, 128);
+}
+
+/* responsive home.js */
+@media (min-width:220px) and (max-width:600px){
+    body{
+        font-size: 15px;
+    }
+    .main{
+        border-radius: 8px;
+        gap: 12px;
+        padding: 20px 15px;
+        width: 90vw;
+        box-shadow: 0px 0px 10px rgba(255,255,255,0.45);
+    }
+    .main h3{
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+    .getStarted{
+        border-radius: 6px;
+        padding: 10px;
+        margin-top: 10px;
+        font-size: 15px;
+    }
+}
+
+
+/* quiz.js */
+.qus-wrp{
+    width: 42vw;
+    box-shadow: 0px 0px 15px rgba(255,255,255,0.45);
+    background: rgba(255,255,255,0.09);
+    padding: 35px;
+}
+.qus-wrp h2{
+    text-align: center;
+    margin-bottom: 25px;
+}
+.qus-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.qus{
+    font-weight: 400;
+    font-size: 20px;
+}
+.qus-row1, .qus-row2{
+    display: flex;
+    gap: 30px;
+}
+.qus-wrp p{
+    border: 1px solid white;
+    width: 100%;
+    border-radius: 10px;
+    padding: 8px 5px 8px 20px;
+    cursor: pointer;
+}
+.qus-wrp p:active, .qus-wrp p:hover{
+    background: rgba(0,0,0, 0.15);
+}
+.qus-wrp .finish-btn{
+  color: white;
+  font-size: 20px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  background: rgb(255, 64, 0);
+  
+}
+.qus-wrp .finish-btn:hover{
+    background: rgb(255, 93, 44);
+}
+/* responsive qus-wrp */
+@media (min-width:220px) and (max-width:600px){
+    .qus-wrp{
+        width: 90vw;
+        box-shadow: 0px 0px 10px rgba(255,255,255,0.45);
+        padding: 20px 15px;
+    }
+    .qus-wrp h2{
+        margin-bottom: 18px;
+    }
+    .qus-container{
+        gap: 12px;
+    }
+    .qus{
+        font-weight: 400;
+        font-size: 16px;
+    }
+    .qus-row1, .qus-row2{
+        display: flex;
+        gap: 15px;
+    }
+    .qus-wrp p{
+        border-radius: 10px;
+        padding: 7px 2px 7px 12px;
+    }
+    .qus-wrp .finish-btn{
+      font-size: 16px;
+      padding: 10px;
+      border-radius: 5px;
+      margin-top: 10px;
+      
+    }
+}
+
+.result-wrp{
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    box-shadow: 0px 0px 15px rgba(255,255,255,0.45);
+    background: rgba(255,255,255,0.09);
+    padding: 35px;
+}
+.result-wrp .header, 
+.result-wrp p{
+    text-align: center;
+}
+.restart-btn{
+    font-size: 20px;
+    padding: 12px;
+    color: white;
+    background: rgb(0, 145, 255, 0.8);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px
+}
+.restart-btn:hover{
+  background: rgb(0, 145, 255);
+}
+/* responsive result-wrp */
+@media (min-width:220px) and (max-width:600px){
+    .result-wrp{
+        width: 90vw;
+        gap:10px;
+        box-shadow: 0px 0px 10px rgba(255,255,255,0.45);
+        padding: 20px;
+    }
+    .restart-btn{
+        font-size: 16px;
+        padding: 10px;
+        border-radius: 8px;
+        margin-top: 5px
+    }
+}
