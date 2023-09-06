@@ -27,7 +27,7 @@ function Quiz(){
          { showResult ?
          ( <div className='result-wrp'>
             <h2 className='header'>Your Score: </h2>
-            <p>{result} out of 10</p>
+            <p>{result} out of 15</p>
             <p>{ Math.round(result*100 / (qusno+1)) }%</p>
              <button onClick={handleRestart} className='restart-btn'>Restart</button>
          </div>
